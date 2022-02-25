@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.ho.mapper.BoardMapper">
+ 
+ 	<!-- 게시판 등록 -->
+ 	<insert id="enroll">
+ 	
+ 		insert into ho_board(hno, title, content, writer, bview) values (hno.nextval, #{title}, #{content}, #{writer}, 0)
+ 	
+ 	</insert>
+ 	
+ 	<!-- 게시판 목록 -->
+ 	<select id="getList" resultType="com.ho.model.BoardVO">
+ 	
+ 		select * from ho_board
+ 	
+ 	</select>
+ 	
+ 	<!-- 게시판 조회 -->
+ 	<select id="getPage" resultType="com.ho.model.BoardVO">
+ 	
+ 		select * from ho_board where hno = #{hno}
+ 	
+ 	</select>
+ 	
+ 	<!-- 게시판 수정 -->
+ 	<update id="modify">
+ 	
+ 		update ho_board set title = #{title}, content = #{content}, uddate = sysdate where hno = #{hno}
+ 	
+ 	</update>
+ 	
+ 	<!-- 게시판 삭제 -->
+ 	<delete id="delete">
+ 	
+ 		delete from ho_board where hno = #{hno}
+ 	
+ 	</delete>
+ 	
+ 	<!-- 검색 조건문 -->
+ 	<sql id="criteria">
+ 		<trim prefix="AND (" suffix=")" prefixOverrides="OR">
+ 			<foreach collection="typeArr" item="type">
+ 				<trim prefix="OR">
+ 					<choose>
+ 						<when test="type == 'T'.toString()">
+ 							title like '%'||#{keyword}||'%'
+ 						</when>
+ 						<when test="type == 'C'.toString()">
+ 							content like '%'||#{keyword}||'%'
+ 						</when>
+ 						<when test="type == 'W'.toString()">
+ 							writer like '%'||#{keyword}||'%'
+ 						</when>
+ 					</choose>
+ 				</trim>
+ 			</foreach>
+ 		</trim>
+ 	</sql>
+ 	
+ 	<!-- 게시물 목록(페이징) -->
+ 	<select id="getListPaging" resultType="com.ho.model.BoardVO">
+ 	
+ 		<![CDATA[
+ 			select hno, title, content, writer, regdate, bview, uddate from(
+ 				select /*+INDEX_DESC(ho_board hb_pk) */ rownum as rn, hno, title, content, writer, bview, regdate, uddate
+ 				from ho_board where rownum <= #{pageNum} * #{amount}
+ 		]]>
+ 			<if test="keyword != null">
+ 				<include refid="criteria"></include>
+ 			</if>
+ 		<![CDATA[
+ 			)
+ 		where rn > (#{pageNum}-1) * #{amount}
+ 		]]>
+ 	
+ 	</select>
+ 	
+ 	<!-- 게시물 총 개수 -->
+ 	<select id="getTotal" resultType="int">
+ 	
+ 		select count(*) from ho_board
+ 		
+ 		<if test="keyword != null">
+ 		
+ 			where hno > 0 <include refid="criteria"></include>
+ 		
+ 		</if>
+ 	
+ 	</select>
+ 	
+ 	<!-- 조회수 -->
+ 	<update id="updateView">
+ 	
+ 		update ho_board set bview = bview+1 where hno = #{hno}
+ 	
+ 	</update>
+ 	
+ 	<!-- 조회수 순위 -->
+ 	<select id="viewrank" resultType="com.ho.model.BoardVO">
+ 	
+ 		select hno, title, writer, ranking from(    
+			select hno, title, writer, row_number() over (order by bview desc) as ranking from ho_board
+			)
+			where ranking between 1 and 3
+ 	
+ 	</select>
+  </mapper>
