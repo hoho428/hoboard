@@ -7,7 +7,7 @@
   - 게시판 - CRUD 기능, 조회수, 조회수 순위(1,2,3위), 페이징 및 검색 처리
   - 사용자 - Security 회원가입 및 로그인, 로그인 유효성 및 중복 검사
 - 개발 언어 : Java 11
-- 개발 환경 : SpringFramework, Spring Security, Jquery3.4.1, html, css
+- 개발 환경 : SpringFramework, Spring Security
 - 데이터베이스 : Oracle 11g, Oracle SQL Developer
 - 형상관리 툴 : GitHub
 - 프로젝트 소개 : 웹 개발의 기본 소양인 CRUD 게시판 프로젝트 구현
@@ -120,12 +120,12 @@
 ### 회원 관련
 #### 회원가입 페이지
 
-![join](https://user-images.githubusercontent.com/83334512/155676983-b46eac20-fd3e-464a-9d86-111a9acc4e69.PNG)
+![join](https://user-images.githubusercontent.com/83334512/155717268-608ad3a3-6caf-4087-945d-85a6a5386672.png)
 
 아이디, 비밀번호, 비밀번호 확인, 이름, 이메일, 주소를 입력하여 회원 가입을 진행할 수 있습니다.
 
 #### 로그인 페이지
+![login_ox](https://user-images.githubusercontent.com/83334512/155713317-93f9fe2c-7c5d-4519-adb2-de8fb719b868.png)
 
-![login_or](https://user-images.githubusercontent.com/83334512/155677807-8c5807d4-eba9-4bef-a1d2-b8360bc981c2.PNG)
-
-회원가입 했던 아이디와 비밀번호를 입력하여 로그인 할 수 있습니다.
+- 회원가입 했던 아이디와 비밀번호를 입력하여 로그인 할 수 있습니다.
+- 로그인 실패시 경고 메시지가 나오고, 로그인에 성공하면 메인 페이지로 리다이렉트 된다.
