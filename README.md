@@ -41,7 +41,46 @@
 ## 3. DB 설계
 
 ## 4. API 설계
+### 게시글 관련
+
+### 회원 관련
 
 ## 6. 화면
 ### 메인 페이지
-![main](https://user-images.githubusercontent.com/83334512/155675289-e1d8c753-13a4-41c6-abb0-fe4590a0d2d3.png)
+
+![home](https://user-images.githubusercontent.com/83334512/155676798-bed0a598-4a0b-439d-99bd-04a30ed82a0a.PNG)
+
+게시물 중 조회수가 높은 순서 1, 2, 3위를 보여줍니다.
+
+### 회원가입 페이지
+
+![join](https://user-images.githubusercontent.com/83334512/155676983-b46eac20-fd3e-464a-9d86-111a9acc4e69.PNG)
+
+아이디, 비밀번호, 비밀번호 확인, 이름, 이메일, 주소를 입력하여 회원 가입을 진행할 수 있습니다.
+
+### 로그인 페이지
+
+![login_or](https://user-images.githubusercontent.com/83334512/155677807-8c5807d4-eba9-4bef-a1d2-b8360bc981c2.PNG)
+
+회원가입 했던 아이디와 비밀번호를 입력하여 로그인 할 수 있습니다.
+
+### 게시판 페이지
+
+![list](https://user-images.githubusercontent.com/83334512/155677924-f7eaca2e-a8f2-4298-b9ca-00ca622ae4f3.png)
+
+- 현재 등록된 게시물과 게시물을 등록할 수 있고 제목과 작성자 등 검색 기능과 페이징 처리를 통해 게시물을 정리하였습니다. 
+- 게시판 오른쪽 상단에 게시판 등록 버튼을 통해 게시물을 등록할 수 있습니다.
+- 각 게시물의 제목을 클릭하면 해당 게시물의 내용을 확인 할 수 있습니다.
+- 하단의 검색 조건과 검색 기능을 통하여 원하는 게시물을 검색할 수 있습니다.
+
+### 상세 조회 페이지
+
+![get](https://user-images.githubusercontent.com/83334512/155678147-40d8b84f-d8c4-4577-9490-3d63aedf30b4.png)
+
+게시물의 고유 번호와 제목, 작성자, 최근 수정일, 조회수, 내용을 보여주는 페이지
+입니다.
+
+### 수정 및 삭제 페이지
+
+![modify_1](https://user-images.githubusercontent.com/83334512/155678887-01932903-7378-4e7c-9048-de184294a4d7.PNG)
+
