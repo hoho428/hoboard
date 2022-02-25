@@ -46,26 +46,15 @@
 ### 회원 관련
 
 ## 6. 화면
-### 메인 페이지
+### 게시글 관련
+#### 메인 페이지
 
 ![home](https://user-images.githubusercontent.com/83334512/155679250-fa086db1-a73d-4b23-a8cc-47e60e29fc1d.PNG)
 
 
 게시물 중 조회수가 높은 순서 1, 2, 3위를 보여줍니다.
 
-### 회원가입 페이지
-
-![join](https://user-images.githubusercontent.com/83334512/155676983-b46eac20-fd3e-464a-9d86-111a9acc4e69.PNG)
-
-아이디, 비밀번호, 비밀번호 확인, 이름, 이메일, 주소를 입력하여 회원 가입을 진행할 수 있습니다.
-
-### 로그인 페이지
-
-![login_or](https://user-images.githubusercontent.com/83334512/155677807-8c5807d4-eba9-4bef-a1d2-b8360bc981c2.PNG)
-
-회원가입 했던 아이디와 비밀번호를 입력하여 로그인 할 수 있습니다.
-
-### 게시판 페이지
+#### 게시판 페이지
 
 ![board](https://user-images.githubusercontent.com/83334512/155679278-e8cd863c-728e-4d64-9dfd-727fb923724a.PNG)
 
@@ -74,7 +63,7 @@
 - 각 게시물의 제목을 클릭하면 해당 게시물의 내용을 확인 할 수 있습니다.
 - 하단의 검색 조건과 검색 기능을 통하여 원하는 게시물을 검색할 수 있습니다.
 
-### 상세 조회 페이지
+#### 상세 조회 페이지
 
 ![get_login](https://user-images.githubusercontent.com/83334512/155680994-96f19a13-f8a1-4ddd-9088-2f7855dc1281.png)
 
@@ -84,7 +73,7 @@
 - 게시물의 고유 번호와 제목, 작성자, 최근 수정일, 조회수, 내용을 보여주는 페이지입니다.
 - 본인이 작성한 글만 수정 및 삭제가 가능합니다.
 
-### 수정 및 삭제 페이지
+#### 수정 및 삭제 페이지
 
 ![modify_2](https://user-images.githubusercontent.com/83334512/155681546-bb5ab729-a9ed-4370-bfbf-5a1f9e5dc411.PNG)
 
@@ -94,7 +83,7 @@
 
 제목과 내용만 수정할 수 있게 합니다.
 
-### 삭제 페이지
+#### 삭제 페이지
 
 ![modify_2](https://user-images.githubusercontent.com/83334512/155682243-7992f104-9710-4d65-9db0-f665b7d1fe9a.PNG)
 
@@ -104,7 +93,7 @@
 
 수정 페이지에서 삭제 버튼을 클릭하면 목록에서 해당 게시물이 삭제된 것을 볼 수 있습니다.
 
-### 게시글 검색 화면
+#### 게시글 검색 화면
 
 ![스크린샷(12)](https://user-images.githubusercontent.com/83334512/155682895-eca8d758-b868-4c49-ba16-144d6d3aeff5.png)
 
@@ -112,3 +101,16 @@
 
 - 사용자가 원하는 검색 주제별로 검색할 수 있다.
 - 페이징 처리되어 조회할 수 있다.
+
+### 회원 관련
+#### 회원가입 페이지
+
+![join](https://user-images.githubusercontent.com/83334512/155676983-b46eac20-fd3e-464a-9d86-111a9acc4e69.PNG)
+
+아이디, 비밀번호, 비밀번호 확인, 이름, 이메일, 주소를 입력하여 회원 가입을 진행할 수 있습니다.
+
+#### 로그인 페이지
+
+![login_or](https://user-images.githubusercontent.com/83334512/155677807-8c5807d4-eba9-4bef-a1d2-b8360bc981c2.PNG)
+
+회원가입 했던 아이디와 비밀번호를 입력하여 로그인 할 수 있습니다.
