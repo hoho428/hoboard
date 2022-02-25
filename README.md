@@ -48,7 +48,8 @@
 ## 6. 화면
 ### 메인 페이지
 
-![home](https://user-images.githubusercontent.com/83334512/155676798-bed0a598-4a0b-439d-99bd-04a30ed82a0a.PNG)
+![home](https://user-images.githubusercontent.com/83334512/155679250-fa086db1-a73d-4b23-a8cc-47e60e29fc1d.PNG)
+
 
 게시물 중 조회수가 높은 순서 1, 2, 3위를 보여줍니다.
 
@@ -66,7 +67,7 @@
 
 ### 게시판 페이지
 
-![list](https://user-images.githubusercontent.com/83334512/155677924-f7eaca2e-a8f2-4298-b9ca-00ca622ae4f3.png)
+![board](https://user-images.githubusercontent.com/83334512/155679278-e8cd863c-728e-4d64-9dfd-727fb923724a.PNG)
 
 - 현재 등록된 게시물과 게시물을 등록할 수 있고 제목과 작성자 등 검색 기능과 페이징 처리를 통해 게시물을 정리하였습니다. 
 - 게시판 오른쪽 상단에 게시판 등록 버튼을 통해 게시물을 등록할 수 있습니다.
