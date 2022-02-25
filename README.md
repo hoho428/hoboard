@@ -39,11 +39,26 @@
   - 로그인을 하지 않고 글 작성 버튼을 누를 경우 동작하지 않습니다.
 
 ## 3. DB 설계
+게시물(ho_board)
+
+![ho_board](https://user-images.githubusercontent.com/83334512/155712400-e36c8f77-5104-4c0a-84d0-f3576c0a642e.PNG)
+
+회원(ho_member)
+
+![ho_member](https://user-images.githubusercontent.com/83334512/155712429-e813a151-9351-43c5-984b-74c931179052.PNG)
 
 ## 4. API 설계
+### 메인 페이지
+
+![main_api](https://user-images.githubusercontent.com/83334512/155711653-01c5e666-af5d-416c-bdfc-193bab3f6715.PNG)
+
 ### 게시글 관련
 
+![board_api](https://user-images.githubusercontent.com/83334512/155711677-aa561a08-d8e6-498d-a8fb-0f84f76b56ed.PNG)
+
 ### 회원 관련
+
+![member_api](https://user-images.githubusercontent.com/83334512/155711703-6f82593f-f7ee-4e1d-8638-6e120cd7dccf.PNG)
 
 ## 6. 화면
 ### 게시글 관련
