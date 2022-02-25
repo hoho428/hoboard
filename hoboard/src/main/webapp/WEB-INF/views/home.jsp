@@ -192,7 +192,7 @@
 	$(document).ready(function(){
 		$(".banner").not(".active").hide() // 화면 로딩 후 첫번째 div를 제외한 나머지 숨김
 		
-		/* 2초마다 다음 슬라이드로 넘어감 */
+		/* 4초마다 다음 슬라이드로 넘어감 */
 		setInterval(nextSlide, 4000); 
 		
 	});
