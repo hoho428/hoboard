@@ -81,10 +81,34 @@
 ![로그인_modify_x_ㅁ](https://user-images.githubusercontent.com/83334512/155680867-9dda3a6d-e575-4ad9-b473-62cbcb3740d4.png)
 
 
-게시물의 고유 번호와 제목, 작성자, 최근 수정일, 조회수, 내용을 보여주는 페이지
-입니다.
+- 게시물의 고유 번호와 제목, 작성자, 최근 수정일, 조회수, 내용을 보여주는 페이지입니다.
+- 본인이 작성한 글만 수정 및 삭제가 가능합니다.
 
 ### 수정 및 삭제 페이지
 
-![modify_1](https://user-images.githubusercontent.com/83334512/155678887-01932903-7378-4e7c-9048-de184294a4d7.PNG)
+![modify_2](https://user-images.githubusercontent.com/83334512/155681546-bb5ab729-a9ed-4370-bfbf-5a1f9e5dc411.PNG)
 
+![modify_success](https://user-images.githubusercontent.com/83334512/155681586-587051ac-651c-407b-be17-540ef0ecbb6e.PNG)
+
+![modify_complete](https://user-images.githubusercontent.com/83334512/155681905-48a16138-326e-43ed-81cb-7f07021dcdc2.PNG)
+
+제목과 내용만 수정할 수 있게 합니다.
+
+### 삭제 페이지
+
+![modify_2](https://user-images.githubusercontent.com/83334512/155682243-7992f104-9710-4d65-9db0-f665b7d1fe9a.PNG)
+
+![delete_complete](https://user-images.githubusercontent.com/83334512/155682255-508d852a-01b2-41e7-83ae-fbe16ac4b506.PNG)
+
+![delete_complete_2](https://user-images.githubusercontent.com/83334512/155682286-811c30ce-4910-483e-af9d-f498a07dec33.PNG)
+
+수정 페이지에서 삭제 버튼을 클릭하면 목록에서 해당 게시물이 삭제된 것을 볼 수 있습니다.
+
+### 게시글 검색 화면
+
+![스크린샷(12)](https://user-images.githubusercontent.com/83334512/155682895-eca8d758-b868-4c49-ba16-144d6d3aeff5.png)
+
+![search_result](https://user-images.githubusercontent.com/83334512/155683381-8c5543dc-7f1a-43f6-b37c-61ddd7a05c67.png)
+
+- 사용자가 원하는 검색 주제별로 검색할 수 있다.
+- 페이징 처리되어 조회할 수 있다.
