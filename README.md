@@ -76,7 +76,10 @@
 
 ### 상세 조회 페이지
 
-![get](https://user-images.githubusercontent.com/83334512/155678147-40d8b84f-d8c4-4577-9490-3d63aedf30b4.png)
+![get_login](https://user-images.githubusercontent.com/83334512/155680994-96f19a13-f8a1-4ddd-9088-2f7855dc1281.png)
+
+![로그인_modify_x_ㅁ](https://user-images.githubusercontent.com/83334512/155680867-9dda3a6d-e575-4ad9-b473-62cbcb3740d4.png)
+
 
 게시물의 고유 번호와 제목, 작성자, 최근 수정일, 조회수, 내용을 보여주는 페이지
 입니다.
